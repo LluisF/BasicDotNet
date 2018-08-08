@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicDotNet.CodenameGenerator", "BasicDotNet.CodenameGenerator\BasicDotNet.CodenameGenerator.csproj", "{4B391934-09A0-4D69-AC7A-002DC8B55F6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicDotNet.CSharpProgramming", "BasicDotNet.CSharpProgramming\BasicDotNet.CSharpProgramming.csproj", "{5901ECF2-4EC0-4F69-A05F-D154429BBE52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicDotNet.CSharpProgramming", "BasicDotNet.CSharpProgramming\BasicDotNet.CSharpProgramming.csproj", "{5901ECF2-4EC0-4F69-A05F-D154429BBE52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicDotNet.CSharpProgramming.Ui", "BasicDotNet.CSharpProgramming.Ui\BasicDotNet.CSharpProgramming.Ui.csproj", "{2C4C1505-155F-4F11-8094-B711B49A595C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5901ECF2-4EC0-4F69-A05F-D154429BBE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5901ECF2-4EC0-4F69-A05F-D154429BBE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5901ECF2-4EC0-4F69-A05F-D154429BBE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4C1505-155F-4F11-8094-B711B49A595C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4C1505-155F-4F11-8094-B711B49A595C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4C1505-155F-4F11-8094-B711B49A595C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4C1505-155F-4F11-8094-B711B49A595C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
