@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicDotNet.CSharpProgrammi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicDotNet.CSharpProgramming.Ui", "BasicDotNet.CSharpProgramming.Ui\BasicDotNet.CSharpProgramming.Ui.csproj", "{2C4C1505-155F-4F11-8094-B711B49A595C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpProgramming", "CSharpProgramming", "{AD7E5F45-9C5D-4E2F-9044-CF69A6481AA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Katas", "Katas", "{43F269B1-6734-4A45-B37D-4D3E66172E12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B391934-09A0-4D69-AC7A-002DC8B55F6B} = {43F269B1-6734-4A45-B37D-4D3E66172E12}
+		{5901ECF2-4EC0-4F69-A05F-D154429BBE52} = {AD7E5F45-9C5D-4E2F-9044-CF69A6481AA4}
+		{2C4C1505-155F-4F11-8094-B711B49A595C} = {AD7E5F45-9C5D-4E2F-9044-CF69A6481AA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8AEAF8D-0ACE-4FE3-9865-8BA8F36F995D}
