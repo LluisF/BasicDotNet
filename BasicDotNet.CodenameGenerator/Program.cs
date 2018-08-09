@@ -1,4 +1,7 @@
-﻿namespace BasicDotNet.CodenameGenerator
+﻿
+using System;
+
+namespace BasicDotNet.CodenameGenerator
 {
     class Program
     {
@@ -7,6 +10,17 @@
 
         static void Main(string[] args)
         {
+            string scodenameGen = Console.ReadLine();
+            int codenameGen = Convert.ToInt32(scodenameGen);
+
+            for (int i = 0; i < codenameGen; ++i )
+            {
+                Random rnd = new Random();
+                int adjNum = rnd.Next(0, Adjectives.Length);
+                int noumNum = rnd.Next(0, Nouns.Length);
+                Console.WriteLine(Adjectives[adjNum] + " " + Nouns[noumNum]);
+            }
+            Console.ReadLine();
         }
     }
 }
