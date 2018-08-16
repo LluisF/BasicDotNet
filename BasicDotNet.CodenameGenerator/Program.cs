@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace BasicDotNet.CodenameGenerator
+﻿namespace BasicDotNet.CodenameGenerator
 {
     class Program
     {
