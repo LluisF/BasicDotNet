@@ -1,6 +1,6 @@
 ﻿namespace BasicDotNet.VuelingAirlinesFleet
 {
-    public enum MotorState
+    public enum EngineState
     {
         On,
         Off,
