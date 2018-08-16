@@ -1,4 +1,9 @@
-﻿namespace BasicDotNet.CodenameGenerator
+﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace BasicDotNet.CodenameGenerator
 {
     class Program
     {
@@ -19,8 +24,7 @@
             if (args.Length == 1)
                 return Int32.Parse(args[0]);
             else
-                return 1;
-            return args.Length == 1 ? Int32.Parse(args[0]) : 1;
+                return args.Length == 1 ? Int32.Parse(args[0]) : 1;
         }
 
         static string GetRandomElement(string[] arr)
@@ -33,7 +37,7 @@
             var adjective = GetRandomElement(Adjectives);
             var noun = GetRandomElement(Nouns);
             return adjective + " " + noun;
-            return $"{adjective} {noun}";
+            //return $"{adjective} {noun}";
         }
 
         static void AddWithoutDuplicates(string codename)
