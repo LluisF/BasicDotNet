@@ -20,6 +20,10 @@ namespace BasicDotNet.CodenameGenerator
                 
         static int ParseArgs(string[] args)
         {
+            if (args.Length == 1)
+                return Int32.Parse(args[0]);
+            else
+                return 1;
             return args.Length == 1 ? Int32.Parse(args[0]) : 1;
         }
 
@@ -32,6 +36,7 @@ namespace BasicDotNet.CodenameGenerator
         {
             var adjective = GetRandomElement(Adjectives);
             var noun = GetRandomElement(Nouns);
+            return adjective + " " + noun;
             return $"{adjective} {noun}";
         }
 
