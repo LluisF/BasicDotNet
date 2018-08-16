@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BasicDotNet.CodenameGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "10"
+    }
+  }
+}
