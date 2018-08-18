@@ -12,7 +12,7 @@ namespace BasicDotNet.VuelingAirlinesFleet
         public int MaxCapacity { get; private set; }
         public double Consume {get; private set; }
 
-        public Airplane (string maker, string model, string patent, list)
+        public Airplane (string maker, string model, string patent, List<FlightPlan>())
         {
             Maker = maker;
             Model = model;
