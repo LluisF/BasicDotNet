@@ -10,6 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetZip" Version="1.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BasicDotNet.CSharpProgramming\BasicDotNet.CSharpProgramming.csproj" />
   </ItemGroup>
 

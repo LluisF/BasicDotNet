@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BasicDotNet.VuelingAirlinesFleet
 {
-    interface IThrottable
+    public interface IThrottable
     {
         void IncreaseImpulsion();
         void DecreaseImpulsion();

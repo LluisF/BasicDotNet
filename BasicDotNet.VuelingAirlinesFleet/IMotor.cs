@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BasicDotNet.VuelingAirlinesFleet
 {
-    interface IMotor
+    public interface IMotor
     {
         string Maker { get;}
         string Model { get;}

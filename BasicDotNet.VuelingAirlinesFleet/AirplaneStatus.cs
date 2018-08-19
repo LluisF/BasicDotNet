@@ -7,6 +7,6 @@ namespace BasicDotNet.VuelingAirlinesFleet
     public enum AirplaneStatus
     {
         Flying,
-        Landed,
+        OnLand
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BasicDotNet.VuelingAirlinesFleet
 {
-    interface ITanker
+    public interface ITanker
     {
         double FuelConsumption { get; }
         double MaxCapacity { get; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BasicDotNet.VuelingAirlinesFleet
 {
-    interface IControllable
+    public interface IControllable
     {
         void Start();
         void Stop();

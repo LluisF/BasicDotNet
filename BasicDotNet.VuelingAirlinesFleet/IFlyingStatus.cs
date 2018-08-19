@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BasicDotNet.VuelingAirlinesFleet
 {
-    interface IFlyingStatus
+    public interface IFlyingStatus
     {
         AirplaneStatus Status { get;}
     }

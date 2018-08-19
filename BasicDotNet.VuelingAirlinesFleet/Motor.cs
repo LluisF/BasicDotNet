@@ -11,13 +11,13 @@ namespace BasicDotNet.VuelingAirlinesFleet
         public double FuelConsumption {get; private set;}
         public MotorType Type {get; set;}
         public MotorState State {get; set;}
-        public Motor(string maker, string model,double fuelCon, MotorType type, MotorState state)
+        public Motor(string maker, string model,double fuelCon, MotorType type)
         {
             Maker = maker;
             Model = model;
             FuelConsumption = fuelCon;
             Type = type;
-            State = state;
+            State = MotorState.Off;
         }
 
         public void Start()
@@ -44,7 +44,7 @@ namespace BasicDotNet.VuelingAirlinesFleet
             else if (MotorState.Blown == State)
                 throw new ArgumentOutOfRangeException("The engine it is broken");
             else if (MotorState.On == State)
-                FuelConsumption =+10;
+                FuelConsumption += 10;
         }
 
         public void DecreaseImpulsion()
@@ -54,7 +54,12 @@ namespace BasicDotNet.VuelingAirlinesFleet
             else if (MotorState.Blown == State)
                 throw new ArgumentOutOfRangeException("The engine it is broken");
             else if (MotorState.On == State)
-                FuelConsumption =-10;
+            {
+                if (FuelConsumption - 10 > 0)
+                    FuelConsumption -= 10;
+                else
+                    State = MotorState.Off; 
+            }
         }
     }
 }
