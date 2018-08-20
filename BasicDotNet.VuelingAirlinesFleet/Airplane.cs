@@ -22,7 +22,7 @@ namespace BasicDotNet.VuelingAirlinesFleet
         public Airplane(string maker, string model, string patent, FlightPlan plan)
         {
             Maker = maker;
-            Model = model;
+            Model = model; 
             Patent = patent;
             FlightPlan = plan;
             checkAirplaneType();
