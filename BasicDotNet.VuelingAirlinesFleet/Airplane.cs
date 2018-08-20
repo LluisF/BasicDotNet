@@ -9,14 +9,15 @@ namespace BasicDotNet.VuelingAirlinesFleet
         public string Model {get; private set;}
         public string Patent {get; private set;}
         public int nPax { get; private set; }
-        public AirplaneStatus Status { get; set; } 
+        public AirplaneStatus Status { get { return CalculateStatus(); } } 
         public FlightPlan FlightPlan {get; private set;}
-        public double FuelConsumption { get; private set;}
+        public double FuelConsumption { get { return CalculateFuelConsumption(); } }
         public double MaxCapacity { get; private set; }
-        public double Capacity { get; private set; }
+        public double Capacity { get { return CalculateCapacity(); }}
+        private double initCapacity;
         public double Velocity { get; private set; }
         public double Autonomy { get { return CalculateAutonomy(); } }
-          private List<Motor> Engines = new List<Motor>();
+        private List<Motor> Engines = new List<Motor>();
 
         public Airplane(string maker, string model, string patent, FlightPlan plan)
         {
@@ -25,13 +26,39 @@ namespace BasicDotNet.VuelingAirlinesFleet
             Patent = patent;
             FlightPlan = plan;
             checkAirplaneType();
-            Capacity = MaxCapacity;
-            FuelConsumption = 0;
+            initCapacity = MaxCapacity;
 
         }
         private double CalculateAutonomy()
         {
-            return 1000; 
+            return Capacity*100/FuelConsumption*0.95; 
+        }
+        private double CalculateCapacity()
+        {
+                double fuelSpent = FlightPlan.GetKmDone() * FuelConsumption / 100;
+                //if(fuelSpent > pCapacity)
+                //    throw new ArgumentOutOfRangeException("The Airplane doesn't have fuel");
+                return initCapacity - fuelSpent;
+ 
+        }
+
+        private AirplaneStatus CalculateStatus()
+        {
+            if (FlightPlan.IsFliying())
+                return AirplaneStatus.Flying;
+            else
+                return AirplaneStatus.OnLand;
+        }
+
+
+        private double CalculateFuelConsumption()
+        {
+            double consum = 0;
+            foreach (var motor in Engines)
+            {
+                consum += motor.FuelConsumption;
+            }
+            return consum;
         }
         private void checkAirplaneType()
         {
@@ -68,24 +95,25 @@ namespace BasicDotNet.VuelingAirlinesFleet
 
         public void IncreaseImpulsion()
         {
-            double consum = 0;
             foreach (var motor in Engines)
-            {
                 motor.IncreaseImpulsion();
-                consum += motor.FuelConsumption;
-            }
-            FuelConsumption = consum;
         }
 
         public void DecreaseImpulsion()
         {
-            double consum = 0;
             foreach (var motor in Engines)
-            {
                 motor.DecreaseImpulsion();
-                consum += motor.FuelConsumption;
-            }
-            FuelConsumption = consum;
+        }
+
+        public void Start()
+        {
+            foreach (var motor in Engines)
+                motor.Start();
+        }
+        public void Stop()
+        {
+            foreach (var motor in Engines)
+                motor.Stop();
         }
     }
 }
