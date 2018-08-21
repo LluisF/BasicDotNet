@@ -7,13 +7,14 @@
         public EngineType Type {get; private set;}
         public EngineState State {get; set;}
         protected int Impulsion{get; private set;}
-        private const double NominalConsumption = 8.0;
+        protected double NominalConsumption{get;private set;}
 
-        public Engine(string maker, string model, EngineType type)
+        public Engine(string maker, string model, EngineType type, double consumption = 1.0)
         {
             Maker = maker;
             Model = model;
             Type = type;
+            NominalConsumption = consumption;
         }
 
         public void Start() { }
@@ -29,6 +30,7 @@
                 return engineTypeFactor * NominalConsumption * Impulsion;
             }
         }
+
         public double AirspeedIncrement
         {
             get

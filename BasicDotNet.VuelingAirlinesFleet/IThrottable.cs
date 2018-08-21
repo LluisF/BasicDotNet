@@ -5,5 +5,6 @@
         void IncreaseImpulsion();
         void DecreaseImpulsion();
         double FuelConsumption { get; }
+        double AirspeedIncrement { get; }
     }
 }

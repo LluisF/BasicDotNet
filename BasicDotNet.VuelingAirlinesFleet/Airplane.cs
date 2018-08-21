@@ -25,7 +25,9 @@ namespace BasicDotNet.VuelingAirlinesFleet
 
         protected Timer Timer {get; private set;}
         
-        public Airplane(string maker, string model, string patent, int numEngines, string engineMaker, string engineModel, EngineType engineType)
+        public Airplane(string maker, string model, string patent, 
+                        int numEngines, string engineMaker, 
+                        string engineModel, EngineType engineType)
         {
             Maker = maker;
             Model = model;
@@ -58,7 +60,9 @@ namespace BasicDotNet.VuelingAirlinesFleet
 
         public bool GotProblems()
         {
-            return true;
+            return Engines.Count(e => e.State == EngineState.Blown ||
+                                      e.State == EngineState.Off) < 
+                                (Engines.Count() / 2);
         }
 
         private void CreateEngines(int numEngines, string engineMaker, string engineModel, EngineType engineType)
