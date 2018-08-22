@@ -3,6 +3,6 @@
     public enum EngineType
     {
         Jet,
-        TurboProp
+        TurboFan
     }
 }

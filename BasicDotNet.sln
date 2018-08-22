@@ -21,6 +21,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VuelingAirlinesFleet", "Vue
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicDotNet.ControlTower", "BasicDotNet.ControlTower\BasicDotNet.ControlTower.csproj", "{5B35E3F7-E409-4A61-94E6-74877BF8757B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdvancedProgrammingConcepts", "AdvancedProgrammingConcepts", "{97FA2DDD-590C-4224-B95A-3C3D4130DD37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicDotNet.AdvProgConcepts.Ui", "BasicDotNet.AdvProgConcepts.Ui\BasicDotNet.AdvProgConcepts.Ui.csproj", "{2506E8FE-8C37-4721-B57D-A6EADB3A32B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicDotNet.AdvProgConcepts", "BasicDotNet.AdvProgConcepts\BasicDotNet.AdvProgConcepts.csproj", "{F7C78F40-C76E-42C3-9E76-9086CB7FA7E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,14 @@ Global
 		{5B35E3F7-E409-4A61-94E6-74877BF8757B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B35E3F7-E409-4A61-94E6-74877BF8757B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B35E3F7-E409-4A61-94E6-74877BF8757B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2506E8FE-8C37-4721-B57D-A6EADB3A32B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2506E8FE-8C37-4721-B57D-A6EADB3A32B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2506E8FE-8C37-4721-B57D-A6EADB3A32B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2506E8FE-8C37-4721-B57D-A6EADB3A32B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C78F40-C76E-42C3-9E76-9086CB7FA7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C78F40-C76E-42C3-9E76-9086CB7FA7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C78F40-C76E-42C3-9E76-9086CB7FA7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C78F40-C76E-42C3-9E76-9086CB7FA7E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +77,8 @@ Global
 		{AB149949-97C0-4D19-941B-AA2B6D24C0F6} = {F398030D-D99D-4670-AC5A-38E3CBCE05C1}
 		{F398030D-D99D-4670-AC5A-38E3CBCE05C1} = {43F269B1-6734-4A45-B37D-4D3E66172E12}
 		{5B35E3F7-E409-4A61-94E6-74877BF8757B} = {F398030D-D99D-4670-AC5A-38E3CBCE05C1}
+		{2506E8FE-8C37-4721-B57D-A6EADB3A32B4} = {97FA2DDD-590C-4224-B95A-3C3D4130DD37}
+		{F7C78F40-C76E-42C3-9E76-9086CB7FA7E0} = {97FA2DDD-590C-4224-B95A-3C3D4130DD37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8AEAF8D-0ACE-4FE3-9865-8BA8F36F995D}

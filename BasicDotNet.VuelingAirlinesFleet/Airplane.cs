@@ -27,12 +27,13 @@ namespace BasicDotNet.VuelingAirlinesFleet
         
         public Airplane(string maker, string model, string patent, 
                         int numEngines, string engineMaker, 
-                        string engineModel, EngineType engineType)
+                        string engineModel, EngineType engineType,
+                        double maxFuelCapacity)
         {
             Maker = maker;
             Model = model;
             Patent = patent;
-            CreateEngines(numEngines, engineMaker, engineModel, engineType);
+            CreateEngines(numEngines, engineMaker, engineModel, engineType);            
             InitTimer();
         }
 
