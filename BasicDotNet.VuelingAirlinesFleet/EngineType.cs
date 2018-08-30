@@ -1,8 +1,8 @@
 ﻿namespace BasicDotNet.VuelingAirlinesFleet
 {
-    public enum MotorType
+    public enum EngineType
     {
         Jet,
-        TurboProp
+        TurboFan
     }
 }
