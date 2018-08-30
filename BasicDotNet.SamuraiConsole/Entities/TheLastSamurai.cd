@@ -6,20 +6,23 @@
       <HashCode>AAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Sword.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.231" Collapsed="true" />
   </Class>
   <Class Name="SamuraiConsole.Entities.Samurai">
     <Position X="6" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAABQAA=</HashCode>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAQAA=</HashCode>
       <FileName>Entities\Samurai.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Weapon" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="SamuraiConsole.Entities.IWarrior">
     <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAABQAA=</HashCode>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAQAA=</HashCode>
       <FileName>Entities\IWarrior.cs</FileName>
     </TypeIdentifier>
   </Interface>

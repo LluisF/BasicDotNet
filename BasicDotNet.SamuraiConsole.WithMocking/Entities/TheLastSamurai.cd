@@ -1,33 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="SamuraiConsole.Entities.Sword" BaseTypeListCollapsed="true">
-    <Position X="8.5" Y="3" Width="1.5" />
+  <Class Name="BasicDotNet.SamuraiConsole.WithMocking.Entities.Sword" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Sword.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="SamuraiConsole.Entities.Samurai">
-    <Position X="6" Y="3" Width="1.5" />
+  <Class Name="BasicDotNet.SamuraiConsole.WithMocking.Entities.Samurai">
+    <Position X="5.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAABQAA=</HashCode>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAQAA=</HashCode>
       <FileName>Entities\Samurai.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Weapon" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BasicDotNet.SamuraiConsole.WithMocking.Entities.Exceptions.SuicidalException">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABA=</HashCode>
+      <FileName>Entities\Exceptions\SuicidalException.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="SamuraiConsole.Entities.IWarrior">
-    <Position X="6" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAABQAA=</HashCode>
-      <FileName>Entities\IWarrior.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SamuraiConsole.Entities.IWeapon">
+  <Interface Name="BasicDotNet.SamuraiConsole.WithMocking.Entities.IWeapon">
     <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\IWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BasicDotNet.SamuraiConsole.WithMocking.Entities.IWarrior">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAQAA=</HashCode>
+      <FileName>Entities\IWarrior.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BasicDotNet.SamuraiConsole.WithMocking.Entities.Exceptions.ISuicidalException">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Entities\Exceptions\ISuicidalException.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
